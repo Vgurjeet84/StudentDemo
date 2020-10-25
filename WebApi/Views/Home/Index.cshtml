@@ -1,0 +1,63 @@
+﻿<form>
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-bordered">
+                <tr>
+                    <td>First Name : </td>
+                    <td><input type="text" class="form-control" id="txtFirstName" /></td>
+                </tr>
+                <tr>
+                    <td>Last Name :</td>
+                    <td><input type="text" class="form-control" id="txtLastName" /></td>
+                </tr>
+                <tr>
+                    <td>Class :</td>
+                    <td><input type="text" class="form-control" id="txtClass" /> </td>
+                </tr>
+            </table>
+            <table class="table table-bordered" id="tblSubject">
+                <tr>
+                    <td>Subject</td>
+                    <td><input type="text" class="form-control Subject" name="Subject"/></td>
+                    <td>Marks</td>
+                    <td><input type="text" class="form-control Marks" name="Marks"/></td>
+                </tr>
+            </table>
+            <input id="btnCreate" type="button" value="Submit" class="btn btn-default" />
+            <input id="btnAdd" type="button" value="Add Subject" class="btn btn-default right" />
+            <input id="btnCancel" type="button" value="Cancel" class="btn btn-default right" />
+        </div>
+    </div>
+    <hr />
+    <div class="row">
+        <div class="col-md-12">
+            <table id="dt_Table" class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Class</th>
+                        <th>View Details</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+</form>
+<style>
+
+    td.details-control {
+        background: url('../../Scripts/images/details_open.png') no-repeat center center;
+        cursor: pointer;
+    }
+
+    tr.shown td.details-control {
+        background: url('../../Scripts/images/details_close.png') no-repeat center center;
+    }
+</style>
+<script type="text/javascript" src="~/Scripts/PageScripts/jsStudent.js"></script>
+<link rel="stylesheet" type="text/css" href="~/Scripts/DataTable/dataTables.bootstrap.css">
+<script type="text/javascript" charset="utf8" src="~/Scripts/DataTable/jquery.dataTables.js"></script>
